@@ -1,0 +1,46 @@
+<head>
+<title>Boogaloo Meme Generator</title>
+<style>
+
+</style>
+<script>
+            var word1, word2, word3, word4, word5;
+            word1 = ["ATF", "fed bois", "alphabet bois", "fudds", "SWAT team", "bootlickers", "National Guard", "Karens", "boomers", "cops"];
+            word2 = ["are kicking down your door", "are executing a red flag order", "shoot your doggo", "start confiscating guns", "stack up on your Mom's house where you live in the basement", "come to seize your tendies", "order you to come out and surrender", "start going door-to-door", "lay siege on your house", "breach your Mom's basement"];
+            word3 = ["throw up your hands and surrender", "make yet another stale boogaloo meme", "deploy the claymore roomba", "livestream and lie about it on Instagram to get attention", "put on your shitty Chinese LARP gear", "point your gun at your benis", "pull out your Anderson", "start furiously masturbating", "hose them down with your illegally modified AR", "call for QRF backup from randos on Facebook"];
+            word4 = ["cry like a little bitch", "flex your hawaiian shirt", "snort cocaine", "screech autistically", "scream 'FOR DUNCAN LEMP'", "set off the tannerite boobytraps", "ask your mom for more chicken tendies", "shit your pants", "go out in a blaze of glory", "say goodbye to your pillow waifu"];
+            word5 = ["playing BFG Division on the Amazon Echo", "Fortnite Dancing the entire time", "eating ass", "making yet another boogaloo side quest meme", "bleeding out on your Mom's carpet", "having a raging boner", "Fortunate Son plays in the background", "people laugh react on your livestream", "cumming on your gun", "setting off your suicide vest"];
+
+            function sentence() {
+              var rand1 = Math.floor(Math.random() * 10);
+              var rand2 = Math.floor(Math.random() * 10);
+              var rand3 = Math.floor(Math.random() * 10);
+              var rand4 = Math.floor(Math.random() * 10);
+              var rand5 = Math.floor(Math.random() * 10);
+              var rand6 = Math.floor(Math.random() * 10);
+
+              var content = "When the " + word1[rand1] + " " + word2[rand2] + " so you " + word3[rand3] + " and " + word4[rand4] + " while " + word5[rand5] + ".";
+
+              document.getElementById('sentence').innerHTML = "&quot;" + content + "&quot;";
+            };
+            sentence();
+</script>
+</head>
+<body>
+<div style="box-sizing:border-box;display:flex;justify-content:center;align-items:center">
+  <h1>Boogaloo Meme Generator</h1>
+</div>
+<div style="box-sizing:border-box;display:flex;justify-content:center;align-items:center">
+  <p>By <a href="http://www.facebook.com/gungrabbingmemes">Gun-Grabbing Memes</a></p>
+</div>
+<div style="box-sizing:border-box;display:flex;justify-content:center;align-items:center">
+  <button style="" onclick="sentence()">New Meme</button>
+</div>
+<div style="box-sizing:border-box;display:flex;justify-content:center;align-items:center;">
+  <font size="5"><p id="sentence"></p></font>
+</div>
+<div style="box-sizing:border-box;display:flex;justify-content:center;align-items:center">
+  <img src="boog.png"></img>
+</div>
+</body>
+</html>
